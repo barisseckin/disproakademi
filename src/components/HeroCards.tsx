@@ -44,7 +44,7 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Bensu Seçkin</CardTitle>
           <CardDescription className="font-normal text-primary">
             Frontend Developer
           </CardDescription>

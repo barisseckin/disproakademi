@@ -13,7 +13,7 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            Disproakademi
           </a>
         </div>
 
@@ -159,7 +159,7 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/leopoldo-miranda/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Bensu Seçkin
           </a>
         </h3>
       </section>
