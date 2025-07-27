@@ -112,33 +112,33 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
+            YDT + TYT AYLIK KOÇLUK
             <Badge
               variant="secondary"
               className="text-sm text-primary"
             >
-              Most popular
+              Popüler
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">₺2800</span>
+            <span className="text-muted-foreground"> /ay</span>
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full">İletişime Geç</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["Kişiye özel TYT+YDT çalışma programları ", "Günlük takip", "Haftalık görüşme", "YDT Soru çözüm taktikleri", "Ödevlendirmeler"].map(
               (benefit: string) => (
                 <span
                   key={benefit}

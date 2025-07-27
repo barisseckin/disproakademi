@@ -13,34 +13,27 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "Koçumu kendim seçebiliyor muyum ?",
+    answer: "Evet, kendiniz seçebilirsiniz.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "Koçluk görüşmeleri nasıl oluyor ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Her hafta koçunuzla belirlediğiniz gün ve saatte Zoom ya da benzeri bir platform üzerinden canlı olarak görüşme yapıyorsunuz.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+      "Koçluk görüşmelerinde süre sınırı var mı ?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Hayır, görüşmelerde herhangi bir süre sınırı bulunmamaktadır.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Koçum günlük olarak çalışmalarımı takip ediyor mu ?",
+    answer: " Evet, koçun tarafından her gün yaptığın çalışmalar takip edilip sana geri bildirim veriliyor.",
     value: "item-4",
-  },
-  {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
-    value: "item-5",
   },
 ];
 
@@ -51,9 +44,9 @@ export const FAQ = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Frequently Asked{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Questions
+        Hakkımızda{" "}
+        <span className="bg-gradient-to-b from-primary/60 to-primary text-blue-800 bg-clip-text">
+          Sıkça Sorulanlar
         </span>
       </h2>
 
