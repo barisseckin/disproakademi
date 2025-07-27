@@ -16,7 +16,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import logo from "@/assets/Background-Eraser.ico";
 
 interface RouteProps {
   href: string;
@@ -50,7 +50,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
+              <img src={logo} alt="Logo" className="h-6 w-6 mr-2" />
               Disproakademi
             </a>
           </NavigationMenuItem>

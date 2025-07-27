@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 import { HeroCards } from "./HeroCards";
 
 export const Hero = () => {
@@ -7,8 +6,8 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              ROTAYI
+            <span className="inline bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
+            ROTAYI
             </span>{" "}
             SEN ÇİZ
           </h1>{" "}
@@ -24,8 +23,6 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
-
           {/*<a
             rel="noreferrer noopener"
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"

@@ -6,13 +6,13 @@ export const Sponsors = () => {
 
         <div className="relative w-full h-12 overflow-hidden">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-muted-foreground/60 text-xl font-bold min-w-max">
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
-            <span className="mx-4">🚀 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
+            <span className="mx-4">🎯 Disproakademi</span>
           </div>
         </div>
       </section>

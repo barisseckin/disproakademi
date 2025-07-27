@@ -50,7 +50,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        {/*<div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Platforms</h3>
           <div>
             <a
@@ -81,7 +81,7 @@ export const Footer = () => {
               Desktop
             </a>
           </div>
-        </div>
+        </div>*/}
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">About</h3>
@@ -152,7 +152,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2025 Landing page made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
