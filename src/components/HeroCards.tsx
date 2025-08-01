@@ -44,7 +44,7 @@ export const HeroCards = () => {
         key: "xqGJhOM0lfLBnlgerfgtyxj3UYbtHU",
       };
 
-      const res = await fetch("https://api.distroakademi.com/api/v1/mails/send", {
+      const res = await fetch("https://api.disproakademi.com/api/v1/mails/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
