@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -11,8 +12,56 @@ import {
 } from "@/components/ui/card";
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
+import {Input} from "@/components/ui/input.tsx";
+
 
 export const HeroCards = () => {
+  const [showEmailForm, setShowEmailForm] = useState(false);
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: "success" | "error" | null; text: string }>({
+    type: null,
+    text: "",
+  });
+
+  const handleSubmit = async () => {
+    if (!email) {
+      setMessage({ type: "error", text: "Lütfen e-posta adresinizi giriniz." });
+      return;
+    }
+
+    try {
+      setLoading(true);
+      setMessage({ type: null, text: "" });
+
+      const payload = {
+        mail: email,
+        nameSurname: "",
+        coachInformation: "",
+        packageType: "UNKNOWN",
+        title: "İletişim Talebi",
+        description: "",
+        key: "xqGJhOM0lfLBnlgerfgtyxj3UYbtHU",
+      };
+
+      const res = await fetch("https://api.distroakademi.com/api/v1/mails/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) throw new Error("İstek başarısız");
+
+      setMessage({ type: "success", text: "Teşekkürler! En kısa sürede size dönüş yapacağız." });
+      setEmail("");
+      setShowEmailForm(false);
+    } catch (err) {
+      setMessage({ type: "error", text: "Bir hata oluştu. Lütfen tekrar deneyin." });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
@@ -106,18 +155,13 @@ export const HeroCards = () => {
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">₺2800</span>
-            <span className="text-muted-foreground"> /ay</span>
+
           </div>
 
           <CardDescription>
 
           </CardDescription>
         </CardHeader>
-
-        <CardContent>
-          <Button className="w-full">İletişime Geç</Button>
-        </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
@@ -144,12 +188,38 @@ export const HeroCards = () => {
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
           </div>
-          <div>
+          <div className="w-full">
             <CardTitle>Ücretsiz görüşme & tanışma fırsatı</CardTitle>
             <CardDescription className="text-md mt-2">
               Formu doldurun sizinle iletişime geçelim.
               <hr className="w-4/5 m-auto mb-4" />
-              <Button className="w-full">Bize Ulaş</Button>
+
+              {!showEmailForm ? (
+                  <Button onClick={() => setShowEmailForm(true)} className="w-full">
+                    Bize Ulaş
+                  </Button>
+              ) : (
+                  <div className="space-y-2">
+                    <Input
+                        type="email"
+                        placeholder="E-posta adresiniz"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <Button onClick={handleSubmit} disabled={loading} className="w-full">
+                      {loading ? "Gönderiliyor..." : "Gönder"}
+                    </Button>
+                    {message.text && (
+                        <p
+                            className={`text-sm ${
+                                message.type === "success" ? "text-green-500" : "text-red-500"
+                            }`}
+                        >
+                          {message.text}
+                        </p>
+                    )}
+                  </div>
+              )}
             </CardDescription>
           </div>
         </CardHeader>
