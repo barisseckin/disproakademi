@@ -20,7 +20,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.postimg.cc/NFfsqfXV/bensu-template.jpg",
+    imageUrl: "https://i.ibb.co/W9gR1B9/bensu-template.jpg",
     name: "BENSU SEÇKİN",
     position: "DİL 5448.",
     socialNetworks: [
@@ -35,17 +35,13 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.postimg.cc/pTDrtLdY/Whats-App-Image-2025-06-26-at-18-32-18.jpg",
+    imageUrl: "https://i.ibb.co/My49L48n/Whats-App-Image-2025-06-26-at-18-32-18.jpg",
     name: "ELİF BAL",
     position: "DİL 5148.",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.linkedin.com/in/elif-bal-06aa35349",
       },
     ],
   },
