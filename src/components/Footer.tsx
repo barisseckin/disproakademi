@@ -1,4 +1,3 @@
-import { LogoIcon } from "./Icons";
 import logo from "@/assets/dispro_icon128px.ico";
 
 export const Footer = () => {
