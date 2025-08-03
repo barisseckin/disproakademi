@@ -52,7 +52,7 @@ export const Navbar = () => {
               <img
                   src={logo}
                   alt="Logo"
-                  className="h-12 w-12 md:h-28 md:w-28 mr-3"
+                  className="h-28 w-28 mr-3"
               />
             </a>
           </NavigationMenuItem>
