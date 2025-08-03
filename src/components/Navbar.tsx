@@ -52,9 +52,8 @@ export const Navbar = () => {
               <img
                   src={logo}
                   alt="Logo"
-                  className="h-20 w-20 mr-3"
+                  className="h-12 w-12 md:h-28 md:w-28 mr-3"
               />
-              Disproakademi
             </a>
           </NavigationMenuItem>
 
