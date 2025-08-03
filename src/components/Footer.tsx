@@ -1,4 +1,5 @@
 import { LogoIcon } from "./Icons";
+import logo from "@/assets/dispro_icon128px.ico";
 
 export const Footer = () => {
   return (
@@ -8,11 +9,15 @@ export const Footer = () => {
       <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div className="col-span-full xl:col-span-2">
           <a
-            rel="noreferrer noopener"
-            href="/"
-            className="font-bold text-xl flex"
+              rel="noreferrer noopener"
+              href="/"
+              className="ml-2 font-bold text-xl flex items-center"
           >
-            <LogoIcon />
+            <img
+                src={logo}
+                alt="Logo"
+                className="h-20 w-20 mr-3"
+            />
             Disproakademi
           </a>
         </div>
