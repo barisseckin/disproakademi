@@ -11,7 +11,6 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import {Check, Instagram, Linkedin} from "lucide-react";
-import { LightBulbIcon } from "./Icons";
 import { Input } from "@/components/ui/input.tsx";
 
 export const HeroCards = () => {
@@ -153,7 +152,6 @@ export const HeroCards = () => {
         <Card className="w-full lg:w-[350px] drop-shadow-xl shadow-black/10 dark:shadow-white/10 lg:absolute lg:-right-[10px] lg:bottom-[35px]">
           <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
             <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-              <LightBulbIcon />
             </div>
             <div className="w-full">
               <CardTitle>Ücretsiz görüşme & tanışma fırsatı</CardTitle>
