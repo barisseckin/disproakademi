@@ -10,7 +10,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
+import {Check, Instagram, Linkedin} from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 import { Input } from "@/components/ui/input.tsx";
 
@@ -86,13 +86,13 @@ export const HeroCards = () => {
 
         {/* Team */}
         <Card className="w-full lg:w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10 lg:absolute lg:right-[20px] lg:top-4">
-          <CardHeader className="mt-8 flex justify-center items-center pb-2">
+          <CardHeader className="relative flex flex-col justify-center items-center pt-16 pb-2">
             <img
                 src="https://i.ibb.co/W9gR1B9/bensu-template.jpg"
                 alt="user avatar"
-                className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
+                className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
             />
-            <CardTitle className="text-center">Bensu Seçkin</CardTitle>
+            <CardTitle className="text-center mt-2">Bensu Seçkin</CardTitle>
             <CardDescription className="font-normal text-primary">
               DİL 5448.
             </CardDescription>
@@ -102,24 +102,17 @@ export const HeroCards = () => {
             <div className="flex gap-2">
               <a
                   rel="noreferrer noopener"
-                  href="https://twitter.com/leo_mirand4"
+                  href="https://www.instagram.com/bensuology?igsh=cGh3dHZiOHRhbHli"
                   target="_blank"
                   className={buttonVariants({ variant: "ghost", size: "sm" })}
               >
-                <svg
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="fill-foreground w-5 h-5"
-                >
-                  <title>X</title>
-                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-                </svg>
+                <Instagram size="20" />
               </a>
-
+            </div>
+            <div className="flex gap-2">
               <a
                   rel="noreferrer noopener"
-                  href="https://www.linkedin.com/in/leopoldo-miranda/"
+                  href="https://www.linkedin.com/in/bensu-se%C3%A7kin-7a47a8262/"
                   target="_blank"
                   className={buttonVariants({ variant: "ghost", size: "sm" })}
               >
@@ -128,6 +121,7 @@ export const HeroCards = () => {
             </div>
           </CardFooter>
         </Card>
+
 
         {/* Pricing */}
         <Card className="w-full lg:w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10 lg:absolute lg:top-[150px] lg:left-[50px]">
